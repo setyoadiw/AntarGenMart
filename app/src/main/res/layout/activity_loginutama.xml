@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7ebd3"
+    tools:context="com.example.asus.tugasakhir2.activities.loginutama">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:background="#f7ebd3" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@drawable/icon2" />
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginLeft="16dp"
+            android:id="@+id/txt_email"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            android:hint="Email"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginLeft="16dp"
+            android:inputType="textPassword"
+            android:id="@+id/txt_password"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:met_floatingLabel="highlight"
+            android:hint="Password"/>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="Login"
+            android:onClick="MainActivity"
+            android:background="#448AFF"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

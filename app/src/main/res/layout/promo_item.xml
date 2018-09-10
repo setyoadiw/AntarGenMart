@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/pcontainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/imgdsc"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icondis"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tvdiskon"
+            android:text="3%"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgdsc"
+            android:layout_marginRight="2dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/pgambar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/ic_shopping_basket"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/pNama_Produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabun"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@+id/pgambar"/>
+        <TextView
+            android:id="@+id/pHargaTurun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:textSize="17sp"
+            android:text="HargaSekarang"
+            android:textStyle="bold"
+            android:layout_below="@+id/pNama_Produk"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/pHarga"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/pHargaTurun"
+            android:layout_alignBaseline="@+id/pHargaTurun"
+            android:layout_marginLeft="4dp"
+            android:text="Harga asli"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pStok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stok: 5"
+            android:textSize="12sp"
+            android:layout_below="@+id/pHarga"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

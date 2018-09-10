@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:text="Form Pengiriman"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Pilih Kurir"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/spn_kurir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:id="@+id/tvalamat"
+                android:text="Alamat Pengiriman"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/rg_alamat"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rb_al_sekarang"
+                    android:checked="true"
+                    android:text="Alamat Sekarang"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvalamatsekarangcontent"
+                    android:textColor="@android:color/black"
+                    android:text="Alamat"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Alamat Lainnya"
+                    android:id="@+id/rb_al_lainnya"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+            
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_alamat"
+                app:met_floatingLabel="highlight"
+                android:hint="Alamat Lainnya"
+                app:met_baseColor="#0056d3"
+                app:met_primaryColor="#982360"
+                app:met_errorColor="#ddaa00"
+                app:met_singleLineEllipsis="true"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Telepon"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:id="@+id/rg_telp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:id="@+id/rb_telp_sekarang"
+                    android:text="Telepon Sekarang"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:id="@+id/tvteleponsekarangcontent"
+                    android:text="Telepon"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Telepon Lainnya"
+                    android:id="@+id/rb_telp_lainnya"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_telepon"
+                app:met_floatingLabel="highlight"
+                android:hint="Telepon"
+                app:met_baseColor="#0056d3"
+                app:met_primaryColor="#982360"
+                app:met_errorColor="#ddaa00"
+                android:inputType="phone"
+                app:met_singleLineEllipsis="true"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_kirim"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/white"
+                android:background="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="kirim"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

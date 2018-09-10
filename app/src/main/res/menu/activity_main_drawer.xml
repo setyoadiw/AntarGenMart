@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_utama"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Utama" />
+        <item
+            android:id="@+id/nav_makanan"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="Makanan" />
+        <item
+            android:id="@+id/nav_minuman"
+            android:icon="@drawable/ic_local_drink_black_24dp"
+            android:title="Minuman" />
+        <item
+            android:id="@+id/nav_obat"
+            android:icon="@drawable/ic_local_hospital_black_24dp"
+            android:title="Kesehatan" />
+        <item
+            android:id="@+id/nav_alat"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Rumah Tangga" />
+        <item
+            android:id="@+id/nav_pesanan"
+            android:icon="@drawable/ic_shopping_basket_black"
+            android:title="Pesanan Saya" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>
